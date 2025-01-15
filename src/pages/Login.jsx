@@ -64,7 +64,7 @@ function Login() {
               {isLoading ? "Logging in..." : "Login with Google"}
             </Button>
             {error && (
-              <div className="mt-8 bg-red-100 border text-center border-red-400 text-red-700 px-4 py-3 rounded">
+              <div className="mt-8 bg-red-100 border font-poppins text-center border-red-400 text-red-700 px-4 py-3 rounded">
                 {error}
               </div>
             )}

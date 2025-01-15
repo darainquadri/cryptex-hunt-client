@@ -91,7 +91,7 @@ function Play() {
             </div>
           )}
           {quesError && (
-            <div className="mt-4 bg-red-100 border text-center border-red-400 text-red-700 px-4 py-3 rounded">
+            <div className="mt-4 bg-red-100 font-poppins border text-center border-red-400 text-red-700 px-4 py-3 rounded">
               {quesError}
             </div>
           )}

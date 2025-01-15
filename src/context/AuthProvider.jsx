@@ -58,11 +58,7 @@ export const AuthProvider = ({ children }) => {
           headers: { Authorization: `Bearer ${user.token}` },
         }
       );
-      if (res.data.user.message) {
-        setUser(res.data.user.message);
-      } else {
-        setUser(res.data.user);
-      }
+      setUser(res.data.user);
       setIsAuthenticated(true);
       setQuesError(null);
       setQuesError(null);
