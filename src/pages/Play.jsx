@@ -27,9 +27,12 @@ function Play() {
         <div className="max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl bg-emerald-800 backdrop-filter backdrop-blur-[6px] bg-opacity-30 mx-auto mt-12 rounded-2xl border-[2px] border-solid border-[#10ab66] shadow-yellow-400 px-8 shadow-md py-4">
           {!user.message ? (
             <div>
-              <div className="text-center text-yellow-300 leading-[4rem]">
+              <div className="text-center text-yellow-300 leading-[4rem] md:flex md:flex-row md:justify-between md:items-center md:gap-4">
+                <div className="md:text-left w-full font-poppins font-semibold text-[1.25rem] md:flex-[3.5] px-4 bg-emerald-500 text-yellow-300 backdrop-filter backdrop-blur-sm bg-opacity-20 transition-colors hover:bg-emerald-900 border-[2px] border-solid border-[#10ab66] shadow-yellow-400 shadow-sm rounded-lg">
+                  Level {user.current_question}
+                </div>
                 <Dialog>
-                  <DialogTrigger className="w-full font-poppins font-semibold text-md px-4 bg-emerald-500 text-yellow-300 backdrop-filter backdrop-blur-sm bg-opacity-20 transition-colors hover:bg-emerald-900 border-[2px] border-solid border-[#10ab66] shadow-yellow-400 shadow-sm rounded-lg">
+                  <DialogTrigger className="mt-4 md:mt-0 w-full font-poppins font-semibold text-md px-4 bg-emerald-500 text-yellow-300 backdrop-filter backdrop-blur-sm bg-opacity-20 transition-colors hover:bg-emerald-900 border-[2px] border-solid border-[#10ab66] shadow-yellow-400 shadow-sm rounded-lg md:flex-1">
                     Hints
                   </DialogTrigger>
                   <DialogContent className="max-w-lg sm:max-w-2xl md:max-w-3xl lg:max-w-4xl font-poppins font-semibold text-md px-4 bg-emerald-500 text-yellow-300 backdrop-filter backdrop-blur-sm bg-opacity-20 transition-colors border-[2px] border-solid border-[#10ab66] shadow-yellow-400 shadow-sm rounded-lg">
