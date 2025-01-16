@@ -16,7 +16,7 @@ function Home() {
             you either win or you die trying
           </div>
           <div className="font-poppins font-semibold py-2 text-center">
-            Event Dates: 17th December 2025 - 19th December 2025
+            Event Dates: 17th January 2025 - 19th January 2025
           </div>
           <div className="text-center mt-4 pb-2">
             <Link to={"/login"}>
