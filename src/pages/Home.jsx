@@ -2,8 +2,7 @@ import { Button } from "@/components/ui/button";
 import plinth from "@/assets/plinth.png";
 import quizzinga from "@/assets/quizzinga.png";
 import FadeInSection from "@/utils/FadeInSection";
-import { Link, useLocation } from "react-router";
-import { useEffect } from "react";
+import { Link } from "react-router";
 
 function Home() {
   return (
@@ -19,11 +18,9 @@ function Home() {
             Event Dates: 17th January 2025 - 19th January 2025
           </div>
           <div className="text-center mt-4 pb-2">
-            <Link to={"/login"}>
-              <Button className="font-poppins font-bold text-lg px-8 py-6 bg-emerald-500 text-yellow-300 backdrop-filter backdrop-blur-sm bg-opacity-20 transition-colors hover:bg-emerald-900 border-[2px] border-solid border-[#10ab66] shadow-yellow-400 shadow-sm">
-                Play the Game
-              </Button>
-            </Link>
+            <Button className="font-poppins font-bold text-lg px-8 py-6 bg-emerald-500 text-yellow-300 backdrop-filter backdrop-blur-sm bg-opacity-20 transition-colors hover:bg-emerald-900 border-[2px] border-solid border-[#10ab66] shadow-yellow-400 shadow-sm">
+              Cryptex has concluded
+            </Button>
           </div>
         </div>
       </FadeInSection>

@@ -1,10 +1,7 @@
 import { Link } from "react-router";
 import logo from "@/assets/logo.png";
-import { AuthContext } from "@/context/AuthProvider";
-import { useContext } from "react";
 
 function Header() {
-  const { isAuthenticated, logout } = useContext(AuthContext);
   return (
     <div className="z-50 pt-4">
       <div className="mx-auto px-12 py-4 z-50 h-auto max-w-[18rem] sm:max-w-xl md:max-w-2xl lg:max-w-4xl bg-emerald-800 backdrop-filter backdrop-blur-lg bg-opacity-30 flex flex-col items-center justify-between gap-4 rounded-3xl sm:rounded-full border-[2px] border-solid border-[#10ab66] shadow-yellow-400 shadow-sm">
@@ -31,14 +28,6 @@ function Header() {
           <div className="transition-all border-b-2 border-transparent hover:text-yellow-300 hover:border-b-yellow-300">
             <Link to={"/leaderboard"}>leaderboard</Link>
           </div>
-          <div className="transition-all border-b-2 border-transparent hover:text-yellow-300 hover:border-b-yellow-300">
-            <Link to={"/play"}>play</Link>
-          </div>
-          {isAuthenticated && (
-            <div className="transition-all border-b-2 border-transparent hover:text-yellow-300 hover:border-b-yellow-300">
-              <Link onClick={logout}>logout</Link>
-            </div>
-          )}
         </div>
       </div>
     </div>

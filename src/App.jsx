@@ -7,9 +7,6 @@ import Policy from "./pages/Policy";
 import Rules from "./pages/Rules";
 import About from "./pages/About";
 import Leaderboard from "./pages/Leaderboard";
-import Play from "./pages/Play";
-import ProtectedRoute from "./utils/ProtectedRoute";
-import Login from "./pages/Login";
 
 const RickrollRedirect = () => {
   useEffect(() => {
@@ -27,24 +24,8 @@ function App() {
         <Route index path="/" element={<Home />} />
         <Route path="/rules" element={<Rules />} />
         <Route path="/about" element={<About />} />
-        <Route
-          path="/leaderboard"
-          element={
-            <ProtectedRoute>
-              <Leaderboard />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/play"
-          element={
-            <ProtectedRoute>
-              <Play />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/privacy-policy" element={<Policy />} />
-        <Route path="/login" element={<Login />} />
         <Route path="*" element={<RickrollRedirect />} />
       </Routes>
     </div>
